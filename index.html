@@ -17,11 +17,25 @@
  	<nav>
  		<a href="" class="espacio-derecha  mediano">Works</a>
  		<a href="https://github.com/Gusttavosanttos" class="espacio-derecha mediano">Github</a>
- 		<a href="https://twitter.com/GUSTAVO_PSANTOS" class="espacio-derecha mediano">Twitter</a>
+ 		<a href="https://twitter.com/GUSTAVO_PSANTOS" class="espacio-derecha mediano" >Twitter</a>
 
  		<a href="contacto.html" class="espacio-derecha mediano">Contact</a>
  	</nav>
+
  </div>
- 	
+ 	<script src="push.min.js"></script>
+ 	<script>
+ 		Push.create("BIENVENIDO SOY GUSTAVO",{
+ 			body: "Pasa por mi Github para revisar mi trabajos y lo que hago",
+ 			icon: "descarga.jpg",
+ 			timeout: 10000,
+ 			onClick: function () {
+        window.location = "https://github.com/Gusttavosanttos"
+        this.close();
+    }
+
+ 		});
+
+ 	</script>
 </body>
 </html>
